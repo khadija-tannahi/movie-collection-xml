@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="style/styles.css"?>
+
+  <!--
+    Class Project: Catalog of various films 
+    
+    Author: Khadija Tannahi
+    Date: 9/23/2024
+  -->
+
+  <!DOCTYPE Movies [
+  <!ELEMENT Movies (collectionTitle, Movie+)>
+  <!ELEMENT collectionTitle (#PCDATA)>
+  <!ELEMENT Movie (title, poster, information, description, document)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT poster EMPTY>
+  <!ELEMENT information (metadata, main-actors)>
+  <!ELEMENT metadata (year, genre, duration)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT duration (#PCDATA)>
+  <!ELEMENT main-actors (highlight, actor+)>
+  <!ELEMENT highlight (#PCDATA)>
+  <!ELEMENT actor (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT document (link)>
+  <!ELEMENT link (#PCDATA)>
+
+  <!ATTLIST Movie MovieID ID #REQUIRED>
+  <!ATTLIST link href CDATA #REQUIRED>
+  
+
+
+
+ ]>
+
+
+  <Movies> 
+
+    <collectionTitle> The Movie Collection </collectionTitle> 
+
+   <Movie MovieID="M1">
+     <title> Forest Gump </title>
+     <poster></poster>
+     <information>
+      <metadata>
+       <year> Year: 1994 </year>
+        <genre> Genre: Comedy/Romance </genre>
+        <duration>  Duration: 2h 22m  </duration>
+      </metadata>  
+       <main-actors>
+          <highlight>Key Cast Members:</highlight>
+          <actor> Tom Hanks  </actor>
+          <actor> Robin Wright </actor>
+          <actor> Gary Sinise  </actor>  
+       </main-actors>       
+     </information> 
+     <description> 
+       <![CDATA[
+         Forrest Gump, American film, released in 1994, that chronicled 30 years (from the 1950s through the early 1980s) 
+         of the life of a intellectually disabled man (played by Tom Hanks) in an unlikely fable that earned critical praise, large audiences,
+         and six Academy Awards, including best picture.
+       ]]>
+     </description> 
+     <document>
+     <link href= "https://www.peacocktv.com/watch-online/movies/forrest-gump/0a48e6fc-3a3c-3e41-aa63-9d6b12da7a32"> Watch Now</link>
+     </document>
+   </Movie>
+
+  <Movie MovieID="M2">
+     <title>  Under Paris </title>
+     <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2024 </year>
+       <genre> Genre: Horror/Action </genre>
+       <duration> Duration: 1h 41m </duration>
+      </metadata> 
+       <main-actors> 
+       <highlight>Key Cast Members:</highlight>
+         <actor> Adil Lyes </actor>
+         <actor> Berenice Bejo </actor>
+         <actor> Lea Leviant  </actor>
+       </main-actors>
+     </information> 
+     <description> 
+       <![CDATA[
+        ActionDramaHorrorSportThriller. 
+        To save Paris from a bloodbath, 
+        a grieving scientist is forced to face her tragic past when a giant shark appears in the Seine. 
+       ]]>
+     </description> 
+     <document>
+       <link href= "https://www.netflix.com/title/81210788"> Watch Now</link>
+     </document>
+   </Movie>
+
+     <Movie MovieID="M3">
+     <title> The Mother </title>
+     <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2023 </year>
+       <genre> Genre: Thriller/Action </genre>
+       <duration> Duration: 1h 58m </duration>
+      </metadata> 
+       <main-actors>
+       <highlight>Key Cast Members:</highlight> 
+         <actor> Jennifer Lopez </actor>
+         <actor> Leslie Lluvet </actor>
+         <actor> Omari Hardwick  </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         A military-trained assassin comes out of hiding to protect 
+         the daughter she's never met from ruthless criminals gunning for revenge.
+         Starring:Jennifer Lopez, 
+         Joseph Fiennes, Gael García Bernal.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/80210920#:~:text=2023%20%7C%20Maturity%20Rating%3AR%20%7C,Joseph%20Fiennes%2C%20Gael%20García%20Bernal"> Watch Now</link>
+     </document>
+   </Movie>
+
+        <Movie MovieID="M4">
+     <title> The Unforgivable </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2021 </year>
+       <genre> Genre: Thriller </genre>
+       <duration> Duration: 1h 52m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Sandra Bullock </actor>
+          <actor> Angelina Jolie </actor>
+          <actor> Jon Bernthal </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         Ruth Slater, a woman released from prison after serving a sentence for a violent crime and attempts to re-enter society. 
+         She must try to put her life back together again in a world that refuses to forgive her past.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81028975"> Watch Now</link>
+     </document>
+   </Movie>
+
+    <Movie MovieID="M5">
+     <title> Bird Box </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2018 </year>
+       <genre> Genre: Horror/Sci-fi  </genre>
+       <duration> Duration: 2h 4m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Sandra Bullock </actor>
+          <actor> Trevante Rhodes </actor>
+          <actor> John Malkovich </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         Five years after an ominous unseen presence decimates society, 
+         a survivor and her two children make a desperate bid to reach safety. 
+         Watch all you want. 
+         Sandra Bullock stars in this gripping thriller based on the novel by Josh Malerman.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/80196789"> Watch Now</link>
+     </document>
+   </Movie>
+
+   <Movie MovieID="M6">
+     <title> Purple Hearts </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2022 </year>
+       <genre> Genre: Romance/Musical </genre>
+       <duration> Duration: 2h 2m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Nicholas Galitzine </actor>
+          <actor> Sofia Carson </actor>
+          <actor> Chosen Jacobs </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         An aspiring musician agrees to a marriage of convenience with a soon-to-deploy Marine, 
+         but a tragedy soon turns their fake relationship all too real.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81043665"> Watch Now</link>
+     </document>
+   </Movie>
+
+      <Movie MovieID="M7">
+     <title> The Swimmers </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2022 </year>
+       <genre> Genre: Sport/Drama </genre>
+       <duration> Duration: 2h 14m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Nathalie Issa </actor>
+          <actor>  Matthias Schweighöfer</actor>
+          <actor> Manal Issa </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         From war-torn Syria to the 2016 Rio Olympics, two young sisters embark on a risky voyage, 
+         putting their hearts and their swimming skills to heroic use. Watch all you want. 
+         BAFTA winner Sally El Hosaini directs and the indomitable Issa sisters star in this true story of triumph amid strife.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81365134#:~:text=From%20war%2Dtorn%20Syria%20to,swimming%20skills%20to%20heroic%20use.text=Watch%20all%20you%20want.,story%20of%20triumph%20amid%20strife."> Watch Now</link>
+     </document>
+   </Movie>
+
+  <Movie MovieID="M8">
+     <title> Blue Miracle </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2021 </year>
+       <genre> Genre: Family film </genre>
+       <duration> Duration: 1h 35m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Jimmy Gonzales </actor>
+          <actor> Miguel Angel Garcia </actor>
+          <actor> Dennis Quaid </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         To save their cash-strapped orphanage, a guardian and his kids partner with a washed-up boat captain for a chance to win a lucrative fishing competition.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81298682"> Watch Now</link>
+     </document>
+   </Movie>
+
+  <Movie MovieID="M9">
+     <title> Non-Stop </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2014 </year>
+       <genre> Genre: Action/Thriller </genre>
+       <duration> Duration: 1h 46m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Liam Neeson </actor>
+          <actor> Julianne Moore </actor>
+          <actor> Michelle Dockery </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         It follows an alcoholic ex-NYPD officer turned Federal Air Marshal who must find 
+         the killer on an international flight from New York to London after receiving texts 
+         saying someone on board will be executed every 20 minutes until financial demands are met.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/70292864"> Watch Now</link>
+     </document>
+   </Movie>
+
+     <Movie MovieID="M10">
+     <title> The Old Guard </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2020 </year>
+       <genre> Genre: Action/Fantasy  </genre>
+       <duration> Duration: 2h 5m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Charlize Theron </actor>
+          <actor> Ngo Thanh Van </actor>
+          <actor> Harry Melling </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         Four undying warriors who've secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81038963"> Watch Now</link>
+     </document>
+   </Movie>
+
+   <Movie MovieID="M11">
+     <title> Triple Frontier </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2019  </year>
+       <genre> Genre: Action/Thriller  </genre>
+       <duration> Duration: 2h 5m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Oscar Isaac </actor>
+          <actor> Ben Affleck </actor>
+          <actor> Charlie Hunnam  </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         Loyalties are tested when five former special forces operatives reunite to steal a drug lord's fortune, 
+         unleashing a chain of unintended consequences.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/80192187"> Watch Now</link>
+     </document>
+   </Movie>
+
+      <Movie MovieID="M12">
+     <title> End of the Road </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2022  </year>
+       <genre> Genre: Crime/Thriller   </genre>
+       <duration> Duration: 1h 31m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Shaun Dixon </actor>
+          <actor> Mychala Faith Lee </actor>
+          <actor> Ludacris </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+        Recently widowed mom Brenda fights to protect her family during a harrowing road trip when a murder and a missing bag of cash plunge them into danger. 
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81232463"> Watch Now</link>
+     </document>
+   </Movie>
+
+    <Movie MovieID="M13">
+     <title> Prey </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2021  </year>
+       <genre> Genre: Thriller  </genre>
+       <duration> Duration: 1h 27m  </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> David Kross </actor>
+          <actor> Hanno Koffler </actor>
+          <actor> Maria Ehrich </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         A hiking trip into the wild turns into a desperate bid for survival for five friends on the run from a mysterious shooter.
+        
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81350329"> Watch Now</link>
+     </document>
+   </Movie>
+
+      <Movie MovieID="M14">
+     <title> 47 Meters Down: Uncaged </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2019 </year>
+       <genre> Genre: Horror/Adventure  </genre>
+       <duration> Duration: 1h 30m </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Brianne Tju </actor>
+          <actor> Sistine Stallone </actor>
+          <actor> Sophie Nélisse </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         Two sisters join their two classmates on a cave dive to explore submerged ruins, only to find themselves hunted by a shark with heightened senses
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/80215040"> Watch Now</link>
+     </document>
+   </Movie>
+
+   <Movie MovieID="M15">
+     <title> The Ice Road </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2021 </year>
+       <genre> Genre: Action/Thriller  </genre>
+       <duration> Duration: 1h 48m  </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Amber Midthunder </actor>
+          <actor> Liam Neeson </actor>
+          <actor> Benjamin Walker </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         To save a team of miners trapped underground, a down-on-his-luck ice road trucker joins a mission across treacherous terrain to deliver rescue equipment.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81438065"> Watch Now</link>
+     </document>
+   </Movie>
+
+      <Movie MovieID="M16">
+     <title> Red Dot </title>
+      <poster></poster>
+     <information>
+     <metadata>
+       <year> Year: 2021 </year>
+       <genre> Genre: Horror/Action  </genre>
+       <duration> Duration: 1h 25m  </duration>
+     </metadata> 
+       <main-actors> 
+          <highlight>Key Cast Members:</highlight>
+          <actor> Nanna Blondell </actor>
+          <actor> Anastasios Soulis </actor>
+          <actor> Johannes Kuhnke </actor>
+       </main-actors>
+     </information>
+     <description> 
+       <![CDATA[
+         Trying to rekindle their marriage and with a child on the way, 
+         a young couple on a ski trip suddenly finds themselves stalked by remorseless killers.
+       ]]>
+     </description>
+     <document>
+       <link href= "https://www.netflix.com/title/81028990"> Watch Now</link>
+     </document>
+   </Movie>
+
+  </Movies>

@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+/*
+  XML
+   Class Project
+   Filename: styles.css
+   Author: Khadija Tannahi
+   Date: 09/24/2024
+
+   This file provides the styling for the XML class project focused on movies.
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+Movies {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  background-color: black;
+  background-image: url('../images/background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+  margin-top: 10px;
+  
+}
+
+collectionTitle {
+  margin-top: 30px;
+  font-size: 3.5em;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px; 
+  border-bottom: 2px solid #99A3AC;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  width: 100%; 
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+Movie{
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+*/
+
+Movie {
+  border: 1px solid #99A3AC;
+  background-color: rgba(66, 22, 24, 0.74); 
+  color: white;
+  border-radius: 10px;
+  width: 43%; 
+  margin: 0 auto 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  overflow: hidden; 
+  padding: 23px;
+  transition: transform 0.2s; 
+  
+  
+}
+
+
+Movie:hover {
+  transform: scale(1.04); 
+}
+
+title {
+  color: white;
+  background-color: #A63833; 
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 6px;
+  border: 1px solid #99A3AC;
+  border-radius: 8px;
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  
+}
+
+title, poster, information, description, link {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+[MovieID="M1"] poster {
+  background-image: url("../images/forrest-gump-poster.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: white;
+}
+
+[MovieID="M2"] poster {
+  background-image: url("../images/Under-Paris.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color:#364C4E;
+}
+
+[MovieID="M3"] poster {
+  background-image: url("../images/The-Mother.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #CCBDB6;
+
+}
+
+[MovieID="M4"] poster {
+  background-image: url("../images/The-Unforgivable.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #24171F;
+}
+
+[MovieID="M5"] poster {
+  background-image: url("../images/Bird-Box.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #000;
+}
+
+[MovieID="M6"] poster {
+  background-image: url("../images/Purple-Hearts.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+}
+
+[MovieID="M7"] poster {
+  background-image: url("../images/The_Swimmers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #4C6D85;
+}
+
+[MovieID="M8"] poster {
+  background-image: url("../images/blue-miracle.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #415F65;
+}
+
+[MovieID="M9"] poster {
+  background-image: url("../images/non-stop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #344E52;
+}
+
+[MovieID="M10"] poster {
+  background-image: url("../images/old-guard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+}
+
+[MovieID="M11"] poster {
+  background-image: url("../images/triple-frontier.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+}
+
+[MovieID="M12"] poster {
+  background-image: url("../images/endOfTheRoad.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #3A6EA7;
+}
+
+[MovieID="M13"] poster {
+  background-image: url("../images/prey.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #130D10;
+}
+
+[MovieID="M14"] poster {
+  background-image: url("../images/merts-down.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #70B3BD;
+}
+
+[MovieID="M15"] poster {
+  background-image: url("../images/ice-road.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #7DA2B2;
+}
+
+[MovieID="M16"] poster {
+  background-image: url("../images/Red_Dot.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 300px;
+  height: 350px;
+  display: flex; 
+  border-radius: 8px;
+  border: #99A3AC 1.5px solid;
+  margin-bottom: 6px;
+  margin: auto;
+  color: #121318;
+}
+
+
+metadata {
+  display: flex;
+  justify-content: space-between; 
+  font-size: 1.1em;
+  color: lightgray; 
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+
+} 
+
+year, genre, duration {
+  margin-right: 55px; 
+  font-size: 22px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main-actors {
+  display: flex;
+  justify-content: space-between; 
+  color: lightgray; 
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+ 
+} 
+
+highlight{
+  font-weight: bold; 
+  margin-bottom: 5px;
+  font-size: 22.5px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+actor{
+  margin-bottom: 3px;
+  margin-right: 40px; 
+  font-size: 22px;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+description{
+  border-radius: 8px;
+  padding: 15px;
+  background-color: rgba(153, 163, 172, 0.70);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 95%;
+  color: white;
+  font-size: 24px;
+  text-align: justify;
+  /* font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+document {
+  display: flex;
+  justify-content: center;
+}
+
+link {
+  display: inline-block;
+  background-color: #A63833; 
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  border-radius: 8px;
+  margin: 20px auto;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+link:hover {
+  background-color: rgb(66, 22, 24);
+  border: #99A3AC 3px solid;
+}
+
+
+
