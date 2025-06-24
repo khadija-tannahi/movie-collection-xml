@@ -12,8 +12,4 @@ This project showcases a collection of movies using structured XML data and styl
 - Responsive design using CSS
 - Clean layout for easy reading and navigation
 
-## 🔗 Live Demo
-
-Check out the live site here:  
-[https://khadija-tannahi.github.io/movie-collection-xml/](https://khadija-tannahi.github.io/movie-collection-xml/)
 
